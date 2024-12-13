@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="uk" data-bs-theme="dark" data-bs-spy="scroll" data-bs-target="#navMenu" data-bs-offset="100" tabindex="0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Підключаємо bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>КІ-401 Онисько Лаб6</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- Навбар -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Токіо Візитка</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Перемикати навігацію">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#shibuya">Шібуя</a></li>
+                <li class="nav-item"><a class="nav-link" href="#asakusa">Асакуса</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sky-tree">Tokyo Sky Tree</a></li>
+                <li class="nav-item"><a class="nav-link" href="#imperial">Імператорський палац</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ueno">Парк Уено</a></li>
+                <li class="nav-item"><a class="nav-link" href="#accordionSection">Історичні факти</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contactForm">Зворотній зв'язок</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero d-flex align-items-center text-center text-white">
+    <div class="hero-overlay rounded animate__animated animate__fadeInUp">
+        <h1 class="display-4">Токіо - сучасна столиця Японії</h1>
+        <p class="lead">Відвідайте визначні місця, дізнайтесь історію та відчуйте унікальну атмосферу міста.</p>
+        <a href="#shibuya" class="btn btn-primary btn-lg mt-4">Почати подорож</a>
+    </div>
+</div>
+
+<!-- Карусель -->
+<div id="tokyoCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#tokyoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
+      <button type="button" data-bs-target="#tokyoCarousel" data-bs-slide-to="1" aria-label="Слайд 2"></button>
+      <button type="button" data-bs-target="#tokyoCarousel" data-bs-slide-to="2" aria-label="Слайд 3"></button>
+  </div>
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="https://www.japan-guide.com/g18/3007_01.jpg" class="d-block w-100" alt="Шібуя">
+          <div class="carousel-caption">
+              <h5 style="color: #fff;">Шібуя</h5>
+              <p style="color: #fff;">Знаменитий пішохідний перехід</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://img.pac.ru/landmarks/466073/big/D146421F7F0001017BB642933B722E82.jpg" class="d-block w-100" alt="Асакуса">
+          <div class="carousel-caption">
+              <h5 style="color: #fff;">Асакуса</h5>
+              <p style="color: #fff;">Історичний район Токіо</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://www.datocms-assets.com/101439/1697302363-tokyo-skytree.webp?auto=format&fit=max&w=1200" class="d-block w-100" alt="Tokyo Sky Tree">
+          <div class="carousel-caption">
+              <h5 style="color: #fff;">Tokyo Sky Tree</h5>
+              <p style="color: #fff;">Одна з найвищих телевеж у світі</p>
+          </div>
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#tokyoCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Назад</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#tokyoCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Вперед</span>
+  </button>
+</div>
+
+<div class="container py-5">
+    <!-- Шібуя -->
+    <div class="row g-4" id="shibuya">
+        <div class="col-md-6 animate-on-scroll">
+            <div class="card bg-dark text-white border-0 shadow-sm h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Shibuya_District_at_Night_2015-04_%2817806976882%29.jpg" class="card-img-top" alt="Шібуя" data-bs-toggle="tooltip" title="Шібуя - центр молодіжної культури!">
+                <div class="card-body">
+                    <h5 class="card-title">Шібуя</h5>
+                    <p class="card-text">Знаменитий район Токіо, де знаходиться один із найжвавіших пішохідних переходів у світі, а також численні магазини та ресторани.</p>
+                    <button class="btn btn-outline-light mt-3 show-map" data-url="https://goo.gl/maps/4x8C5wht1A92">Показати на карті</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Асакуса -->
+        <div class="col-md-6 animate-on-scroll" id="asakusa">
+            <div class="card bg-dark text-white border-0 shadow-sm h-100">
+                <img src="https://go-japan.ru/upload/resize_cache/webp/upload/iblock/404/80355sh77uw1g3v3g86t81yf8zttc31m/asakusa.webp" class="card-img-top" alt="Асакуса" data-bs-toggle="tooltip" title="Історичний район Токіо">
+                <div class="card-body">
+                    <h5 class="card-title">Асакуса</h5>
+                    <p class="card-text">Історичний центр Токіо, де розташований храм Сенсодзі, один із найстаріших храмів Японії.</p>
+                    <button class="btn btn-outline-light mt-3 show-map" data-url="https://goo.gl/maps/Z3F1FJ94QLR2">Показати на карті</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tokyo Sky Tree, Імператорський палац -->
+    <div class="row g-4 mt-4" id="sky-tree">
+        <div class="col-md-6 animate-on-scroll">
+            <div class="card bg-dark text-white border-0 shadow-sm h-100">
+                <img src="https://www.agoda.com/wp-content/uploads/2024/07/Tokyo-Skytree-1244x700.jpg" class="card-img-top" alt="Tokyo Sky Tree" data-bs-toggle="tooltip" title="Неймовірний вид на Токіо!">
+                <div class="card-body">
+                    <h5 class="card-title">Tokyo Sky Tree</h5>
+                    <p class="card-text">Телевежа, що стала символом сучасного Токіо, з оглядовим майданчиком на висоті понад 600 метрів.</p>
+                    <button class="btn btn-outline-light mt-3 show-map" data-url="https://goo.gl/maps/8QVX8xrPsyq2">Показати на карті</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Імператорський палац -->
+        <div class="col-md-6 animate-on-scroll" id="imperial">
+            <div class="card bg-dark text-white border-0 shadow-sm h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Tatsumi-yagura%2C_Tokyo_Imperial_Palace_%2852158185625%29.jpg" class="card-img-top" alt="Імператорський палац" data-bs-toggle="tooltip" title="Офіційна резиденція імператора Японії">
+                <div class="card-body">
+                    <h5 class="card-title">Імператорський палац</h5>
+                    <p class="card-text">Резиденція імператора Японії, оточена красивими садами, доступними для туристів.</p>
+                    <button class="btn btn-outline-light mt-3 show-map" data-url="https://goo.gl/maps/Wu8E2QPocBQ2">Показати на карті</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Парк Уено -->
+    <div class="row g-4 mt-4" id="ueno">
+        <div class="col-md-6 animate-on-scroll">
+            <div class="card bg-dark text-white border-0 shadow-sm h-100">
+                <img src="https://i0.wp.com/www.touristjapan.com/wp-content/uploads/2010/09/Shutterstock_1365397976-scaled.jpg?fit=6144%2C4099&ssl=1" class="card-img-top" alt="Парк Уено" data-bs-toggle="tooltip" title="Оазис природи в Токіо">
+                <div class="card-body">
+                    <h5 class="card-title">Парк Уено</h5>
+                    <p class="card-text">Великий парк, відомий своїми музеями, зоопарком та сезонним цвітінням сакури.</p>
+                    <button class="btn btn-outline-light mt-3 show-map" data-url="https://goo.gl/maps/Rv6N1bQUjQp2">Показати на карті</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accordion -->
+    <div class="mt-5" id="accordionSection">
+        <h2>Історичні факти про Токіо</h2>
+        <div class="accordion" id="historyAccordion">
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="factOne">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        Факт 1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+                    <div class="accordion-body">
+                        Токіо був заснований як маленьке рибацьке село під назвою Едо, яке пізніше стало столицею Японії.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="factTwo">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Факт 2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+                    <div class="accordion-body">
+                        Токіо є найбільш густонаселеним мегаполісом у світі.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="factThree">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        Факт 3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+                    <div class="accordion-body">
+                        Токіо був практично знищений під час Великого землетрусу Канто 1923 року.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark text-white">
+                <h2 class="accordion-header" id="factFour">
+                    <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                        Факт 4
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#historyAccordion">
+                    <div class="accordion-body">
+                        Токіо був відновлений після Другої світової війни і став символом економічного зростання Японії.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Форма зворотнього зв'язку -->
+    <div class="mt-5" id="contactForm">
+        <h2>Зворотній зв'язок</h2>
+        <form class="mt-3">
+            <div class="mb-3">
+                <label for="name" class="form-label">Ваше ім'я</label>
+                <input type="text" class="form-control" id="name" placeholder="Введіть ваше ім'я">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Ваш Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Ваше повідомлення</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Напишіть ваше повідомлення..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Надіслати</button>
+        </form>
+    </div>
+</div>
+
+<footer class="footer text-center text-white">
+    <div class="container">
+        <p class="mb-0">© 2024 Токіо Візитка. Всі права захищено.</p>
+        <small>Створено з любов'ю до Токіо.</small>
+    </div>
+</footer>
+
+<!-- Toast -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="mapToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">Локація відкриється в новій вкладці.</div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Закрити"></button>
+        </div>
+    </div>
+</div>
+
+<!-- Підключення Bootstrap JS (bundle включає Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Анімації при скролі
+    document.addEventListener('scroll', function() {
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        const triggerBottom = window.innerHeight * 0.9; 
+        elements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if(rect.top < triggerBottom) {
+                el.classList.add('animate-in', 'animate__animated', 'animate__fadeInUp');
+            }
+        });
+    });
+
+    // Ініціалізація тултіпів
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    // Ініціалізація тосту
+    const mapToastEl = document.getElementById('mapToast');
+    const mapToast = new bootstrap.Toast(mapToastEl);
+    const showMapButtons = document.querySelectorAll('.show-map');
+
+    showMapButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            window.open(btn.getAttribute('data-url'), '_blank');
+            mapToast.show();
+        });
+    });
+});
+</script>
+
+</body>
+</html>
